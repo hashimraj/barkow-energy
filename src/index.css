@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 17% 98%;
+    --foreground: 203 73% 19%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 203 73% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 203 73% 19%;
+
+    --primary: 203 73% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 122 39% 49%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 17% 95%;
+    --muted-foreground: 203 30% 45%;
+
+    --accent: 43 100% 48%;
+    --accent-foreground: 203 73% 19%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 17% 90%;
+    --input: 210 17% 90%;
+    --ring: 203 73% 19%;
+
+    --radius: 0.5rem;
+
+    /* Solar Energy Brand Colors */
+    --solar-blue: 203 73% 19%;
+    --solar-yellow: 43 100% 48%;
+    --eco-green: 122 39% 49%;
+    --light-bg: 210 17% 98%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(203 73% 19%) 0%, hsl(203 60% 35%) 100%);
+    --gradient-solar: linear-gradient(135deg, hsl(43 100% 48%) 0%, hsl(43 100% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(203 73% 19%) 0%, hsl(122 39% 49%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(43 100% 48% / 0.2), transparent 70%);
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px rgba(11, 57, 84, 0.08);
+    --shadow-medium: 0 4px 16px rgba(11, 57, 84, 0.12);
+    --shadow-strong: 0 8px 24px rgba(11, 57, 84, 0.16);
+    --shadow-glow: 0 0 40px rgba(244, 180, 0, 0.3);
+    --shadow-neon: 0 0 20px rgba(244, 180, 0, 0.5), 0 0 40px rgba(244, 180, 0, 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Glass effects */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+  }
+
+  .dark {
+    --background: 203 73% 12%;
+    --foreground: 210 17% 98%;
+
+    --card: 203 60% 15%;
+    --card-foreground: 210 17% 98%;
+
+    --popover: 203 60% 15%;
+    --popover-foreground: 210 17% 98%;
+
+    --primary: 43 100% 48%;
+    --primary-foreground: 203 73% 19%;
+
+    --secondary: 122 39% 49%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 203 50% 20%;
+    --muted-foreground: 210 17% 70%;
+
+    --accent: 43 100% 48%;
+    --accent-foreground: 203 73% 19%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 17% 98%;
+
+    --border: 203 50% 25%;
+    --input: 203 50% 25%;
+    --ring: 43 100% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-solar {
+    background: var(--gradient-solar);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-solar);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .gradient-glass {
+    background: var(--gradient-glass);
+  }
+}
