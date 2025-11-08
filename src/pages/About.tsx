@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Award, Users, Lightbulb } from "lucide-react";
-import founderImage from "@/assets/founder.jpg";
+import founderImage from "@/assets/founder.jpeg";
 
 const About = () => {
   const milestones = [
