@@ -172,7 +172,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-lg mb-1 text-primary">Office Address</h3>
                       <p className="text-muted-foreground">
                         1104 Norman Way<br />
-                        Birmingham, AL 35242<br />
+                        Minnesota, AL 35242<br />
                         United States
                       </p>
                     </div>
@@ -255,7 +255,7 @@ const Contact = () => {
                 Visit Our Office
               </h2>
               <p className="text-lg text-muted-foreground">
-                Located in Birmingham, Alabama
+                Located in Minnesota
               </p>
             </div>
             <Card className="border-none shadow-strong overflow-hidden">

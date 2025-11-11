@@ -72,7 +72,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Alabama Manufacturing Plant",
+      title: "Minnesota Manufacturing Plant",
       location: "Huntsville, AL",
       type: "Industrial",
       date: "December 2023",
@@ -80,7 +80,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800",
       description: "Massive industrial installation powering a 100,000 sq ft manufacturing facility.",
       testimonial: "Impressive scale and execution. Exceeded all expectations.",
-      client: "Alabama Manufacturing Co.",
+      client: "Minnesota Manufacturing Co.",
     },
   ];
 
@@ -100,7 +100,7 @@ const Projects = () => {
               Our Projects
             </h1>
             <p className="text-xl md:text-2xl opacity-90 animate-fade-in-up">
-              Showcasing our successful solar installations across Alabama
+              Showcasing our successful solar installations across Minnesota
             </p>
           </div>
         </div>
