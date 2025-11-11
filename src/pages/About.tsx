@@ -6,7 +6,7 @@ import founderImage from "@/assets/founder.jpeg";
 
 const About = () => {
   const milestones = [
-    { year: "2007", title: "Company Founded", description: "Barret Kowalski establishes Barkow Energy" },
+    { year: "2007", title: "Company Founded", description: "Barret Kowalski establishes Barkow Energy in Birmingham, AL" },
     { year: "2012", title: "1,000 Installations", description: "Reached milestone of 1,000 successful solar installations" },
     { year: "2016", title: "Commercial Expansion", description: "Expanded services to include large-scale commercial projects" },
     { year: "2020", title: "Battery Solutions", description: "Launched advanced energy storage and battery systems" },
