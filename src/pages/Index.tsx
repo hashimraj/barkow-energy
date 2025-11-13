@@ -37,7 +37,7 @@ const Index = () => {
   const heroImages = [heroImage1, heroImage2, heroImage3];
   
   const stats = [
-    { icon: Award, label: "25+ Years of Experience", value: "Since 2007" },
+    { icon: Award, label: "25+ Years of Experience", value: "Since 1997" },
     { icon: Globe, label: "Global Energy Expertise", value: "Trusted Solutions" },
     { icon: Shield, label: "Certified & Insured", value: "100% Reliable" },
   ];
@@ -97,7 +97,7 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 z-10 text-center text-white py-32 md:py-20 relative">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium">Powering Sustainability Since 2007</span>
+            <span className="text-sm font-medium">Powering Sustainability Since 1997</span>
           </div>
           <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl mb-6 animate-fade-in-up leading-tight">
             Power Your Future with <span className="text-gradient shadow-glow">Solar Energy</span>
@@ -171,7 +171,7 @@ const Index = () => {
                 About Barkow Energy
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Founded by <span className="font-bold text-primary">Barret Kowalski</span> in 2007,
+                Founded by <span className="font-bold text-primary">Barret Kowalski</span> in 1997,
                 Barkow Energy has been at the forefront of renewable energy solutions for over 25 years.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
